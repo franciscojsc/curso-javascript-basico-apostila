@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>array</title>
+		<script type="text/javascript">
+			//Array
+			
+			function CriarArray (n) {
+				this.length = n;
+				for(var i ; i<= n; i++){
+					this[i] = "";
+				}
+			}
+			
+			var NomeDia = new CriarArray(7);
+			NomeDia[0] = "Domingo";
+			NomeDia[1] = "Segunda";
+			NomeDia[2] = "Terca";
+			NomeDia[3] = "Quarta";
+			NomeDia[4] = "Quinta";
+			NomeDia[5] = "Sexta";
+			NomeDia[6] = "Sabado";
+			
+			var Atividade = new CriarArray(5);
+			Atividade[0] = "Analista";
+			Atividade[1] = "Programador";
+			Atividade[2] = "Operador";
+			Atividade[3] = "Conferente";
+			Atividade[4] = "Digitador";
+			
+			var DiaSemana = NomeDia[4];
+			var Ocupacao = Atividade[1];
+			
+			document.write(DiaSemana);
+			document.write("<br/>");
+			document.write(Ocupacao);
+			document.write("<br/>");
+			
+			function Empresa (Emp, Nfunc, Prod) {
+			
+				this.Emp = Emp;
+				this.Nfunc = Nfunc;
+				this.Prod = Prod;
+			}
+			
+			var TabEmp = new Empresa(3);
+			TabEmp[1] = new Empresa("Elogica","120","Servicos");
+			TabEmp[2] = new Empresa("Pitacao","35","Software");
+			TabEmp[3] = new Empresa("Corisco","42","Conectividade");
+			
+			Atividade = TabEmp[3].Prod;
+			
+			document.write(Atividade);
+			document.write("<br/>");
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
